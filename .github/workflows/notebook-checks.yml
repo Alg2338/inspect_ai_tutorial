@@ -31,3 +31,6 @@ jobs:
 
       - name: Check notebooks
         run: uv run python scripts/check_notebooks.py
+
+      - name: Test notebook results examples offline
+        run: uv run python scripts/test_tutorial_1_results.py -v
